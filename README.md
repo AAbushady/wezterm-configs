@@ -20,8 +20,16 @@ Without `theme.lua`, the Default theme is used. The file is gitignored — your 
 
 ## Install
 
+**Linux / macOS:**
+
 ```bash
 git clone https://github.com/AAbushady/wezterm-configs.git ~/.config/wezterm
+```
+
+**Windows (PowerShell):**
+
+```powershell
+git clone https://github.com/AAbushady/wezterm-configs.git "$HOME\.config\wezterm"
 ```
 
 **Theme (optional):** Copy `theme.example.lua` to `theme.lua` and set your preferred theme. Without it, defaults to Default (CGA/VGA).
