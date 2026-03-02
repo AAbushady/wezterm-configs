@@ -1,0 +1,6 @@
+background.*
+themes/*/background.*
+hosts.lua
+font.lua
+theme.lua
+.claude/settings.local.json
