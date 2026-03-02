@@ -1,4 +1,4 @@
-background.*
+background*.*
 themes/*/background.*
 hosts.lua
 font.lua
