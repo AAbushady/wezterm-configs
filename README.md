@@ -32,6 +32,12 @@ git clone https://github.com/AAbushady/wezterm-configs.git ~/.config/wezterm
 git clone https://github.com/AAbushady/wezterm-configs.git "$HOME\.config\wezterm"
 ```
 
+**Windows (CMD):**
+
+```cmd
+git clone https://github.com/AAbushady/wezterm-configs.git "%USERPROFILE%\.config\wezterm"
+```
+
 **Theme (optional):** Copy `theme.example.lua` to `theme.lua` and set your preferred theme. Without it, defaults to Default (CGA/VGA).
 
 **Font (optional):** Copy `font.example.lua` to `font.lua` and set your preferred font. Without it, defaults to JetBrains Mono.
