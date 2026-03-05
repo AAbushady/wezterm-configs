@@ -53,12 +53,12 @@ Root `wezterm.lua` initializes `config.keys = {}`, requires each feature, and ca
 
 Defined in `hosts.lua` (gitignored). Copy `hosts.example.lua` to `hosts.lua` and fill in your hosts. Each entry has `name`, `remote_address`, `username`, and `color` (hex for pane borders/tab accents).
 
-Connect via: `Alt+S` → select host. All domains use `multiplexing = 'None'`. Session persistence is handled by tmux/byobu on the remote.
+Connect via: `Alt+S` → select host. All domains use `multiplexing = 'None'`. Session persistence is handled by tmux on the remote.
 
 ## Conventions
 
 - **Color palette:** Each theme defines its own palette. The Default theme uses CGA/VGA hex values, Catppuccin Mocha uses its palette, One Dark Pro uses its palette.
-- **ANSI overrides:** `update-status` overrides ANSI colors with theme-specific lighter variants for better contrast over white text in SSH sessions (e.g., byobu status bars).
+- **ANSI overrides:** `update-status` overrides ANSI colors with theme-specific lighter variants for better contrast over white text in SSH sessions (e.g., tmux status bars).
 - **Domain awareness:** Tab titles, pane borders, and workspace layouts all key off `theme.domain_colors`. To add a new SSH domain, just add an entry to `hosts.lua` — `features/ssh.lua` builds `ssh_domains` and populates `theme.domain_colors` automatically.
 - **Keybinding scheme:** `Alt+<key>` for navigation, `Alt+Shift+<key>` for actions (split, merge, close, resize, swap, zoom, layouts). `Cmd+C/V` (macOS) or `Ctrl+C/V` (Windows/Linux) for clipboard.
 - **Smart copy:** copies if there's a selection, sends interrupt otherwise.
